@@ -1,0 +1,191 @@
+.resume-container{
+    /* border: 2px solid linen; */
+    display: flex;
+    flex-direction: row;
+    height: 90vh;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 2vh;
+    padding-right: 2vh;
+}
+
+.resumecap-container{
+    /* border: 2px solid white; */
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    /* margin-left: 11.5vw; */
+    flex-basis: 46%;    
+}
+
+.resumecap{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: 6.5em;
+    border-bottom: .95em solid transparent;
+    border-image: linear-gradient(to right,
+     rgba(42,244,153), rgba(22, 204, 198, 0.479), rgba(0, 160, 252, 0)120%);
+    border-image-slice: 1;
+    margin-left: -8%;
+}
+
+.resume-menu-container {
+    /* border: 3px solid rgb(70, 20, 20); */
+    display: flex;
+    height: 100%;
+    align-items: center;
+    flex-basis: 16%;
+    direction: rtl;
+    /* margin-left: 30vh; */
+}
+
+.resume-sub-menu{
+    flex-direction: column;
+}
+
+.resumemorelinks{
+    align-self: flex-end;
+    font-family: Montserrat, Helvetica, Arial, sans-serif;
+    font-size: 1.5em;
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: .05em;
+    line-height: 1.6em;
+    text-transform: none;
+    color: linen;
+    direction: rtl;
+    transition: 0.35s;
+    z-index: 1;
+    width: fit-content;
+    /* border:3px solid rgb(247, 169, 91); */
+}
+
+.resumemorelinks:hover{
+    color:linen;
+    transform: scale(1.15);
+    text-shadow: 0px 0px 20px rgb(0, 238, 255);
+    transition: all .75s ease-in-out;
+    cursor:pointer;
+}
+
+.resumemorelinks::before {
+    content: "";
+    position: fixed;
+    bottom: 0.2em;
+    left: 0;
+    width: 0px;
+    height: 3px;
+    color: white;
+    background: rgb(0, 238, 255);
+    transition: width 0.35s ease-in-out;
+    
+    /* border:3px solid linen; */
+}
+
+.resumemorelinks:hover::before {
+    width: 100%;
+    transition: width .35s ease-in-out;
+}
+
+.resume-text-container {
+    /* border: 3px solid red; */
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding: 2.6vh;
+    flex-basis: 40%;
+}
+
+.resume-parag {
+    font-family: Esteban, Georgia, 'Times New Roman', serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: -0.5px;
+    line-height: 20px;
+    text-transform: none;
+    color: linen;
+    padding: .5%;
+    /* border:3px solid rgb(82, 162, 199); */
+}
+
+@media (max-width: 600px) {
+    
+    .resume-container{
+        /* border: 2px solid linen; */
+        display: flex;
+        flex-direction: column;
+        height: 160vw;
+        align-items: center;
+        justify-content: space-around;
+        padding-left: 2vh;
+        padding-right: 2vh;
+    }
+    
+    .resumecap-container{
+        /* border: 2px solid white; */
+        display: flex;
+        height:fit-content;
+        align-items: center;
+        justify-content: center;
+        /* margin-left: 11.5vw; */
+        flex-basis:20%;    
+    }
+    
+    .resumecap{
+        height: 16vw;
+        border-bottom: 3.25vw solid transparent;
+        margin-left: 0%;
+    }
+    
+    .resume-menu-container {
+        /* border: 3px solid rgb(70, 20, 20); */
+        justify-content: center;
+        /* margin-left: 30vh; */
+    }
+    
+    .resume-sub-menu{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .resumemorelinks{
+        align-self: center;
+        font-size: 4.8vw;
+        /* border:3px solid rgb(247, 169, 91); */
+    }
+    
+    .resumemorelinks:hover{
+        transform: scale(1.05);
+    }
+    
+   
+    
+    .resume-text-container {
+        /* border: 3px solid red; */
+        display: flex;
+        height: 100%;
+        align-items: center;
+        text-align: center;
+        padding: 0vh;
+        flex-basis: 70%;
+    }
+    
+    .resume-parag {
+        font-family: Esteban, Georgia, 'Times New Roman', serif;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: normal;
+        letter-spacing: -0.5px;
+        line-height: 20px;
+        text-transform: none;
+        color: linen;
+        padding: .5%;
+        /* border:3px solid rgb(82, 162, 199); */
+    }
+
+}

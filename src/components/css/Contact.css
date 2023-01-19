@@ -1,0 +1,228 @@
+.contact-container{
+    /* border: 2px solid linen; */
+    display: flex;
+    flex-direction: row;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+    padding-left: 2vh;
+    padding-right: 2vh;
+}
+
+.contact-cap-container{
+  /* border: 2px solid white; */
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  /* margin-left: 11.5vw; */
+  flex-basis: 46%;    
+}
+
+.contact-cap{
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  height: 6.5em;
+  border-bottom: .95em solid transparent;
+  border-image: linear-gradient(to right,
+   rgba(42,244,153), rgba(22, 204, 198, 0.479), rgba(0, 160, 252, 0)120%);
+  border-image-slice: 1;
+  margin-left: -8%;
+}
+
+.contact-menu-container {
+  /* border: 3px solid rgb(70, 20, 20); */
+  display: flex;
+  height: 100%;
+  align-items: center;
+  flex-basis: 16%;
+  direction: rtl;
+  /* margin-left: 30vh; */
+}
+
+.contact-sub-menu{
+  flex-direction: column;
+}
+
+.contact-morelinks{
+  align-self: flex-end;
+  font-family: Montserrat, Helvetica, Arial, sans-serif;
+  font-size: 1.5em;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: .05em;
+  line-height: 1.6em;
+  text-transform: none;
+  color: linen;
+  direction: rtl;
+  transition: 0.35s;
+  z-index: 1;
+  width: fit-content;
+  /* border:3px solid rgb(247, 169, 91); */
+}
+
+.ContactColumn{
+    display: flex;
+    flex-direction: column;
+    width: 20em;
+    height: 17em;
+    /* border:3px solid linen; */
+}
+
+
+.background{
+    display: flex;
+    flex-direction: column;
+    /* border: 3px solid red; */
+    padding: 3%;
+    padding-bottom: 10%;
+    background-color: rgba(172, 172, 172, 0.05);
+    z-index: 1;
+}
+
+textarea{
+  width: 100%;
+  min-height: 50%;
+  box-sizing: border-box;
+  border-radius: .0em;
+  overflow: hidden;
+  background-color: #ecececfd;
+  border:none;
+  /* resize: none; */
+}
+
+textarea:placeholder-shown {
+  background-color: #ecececfd;
+  border: 2px solid rgb(18, 154, 172);
+  border-radius: 5px;
+}
+
+input{
+  box-sizing: border-box;
+  background-color: #ecececfd;
+  border-radius: .0em;
+  border:none;
+}
+
+input:placeholder-shown {
+  background-color: #ecececfd;
+  border: 2px solid rgb(18, 154, 172);
+  border-radius: 5px;
+}
+
+.styledbutton{
+  background-color: #a5a5a5;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.styledbutton:hover{
+  filter: brightness(1.2);
+}
+
+@media (max-width:600px){
+
+  .contact-container{
+    /* border: 2px solid linen; */
+    display: flex;
+    flex-direction: column;
+    height: 160vw;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 2vh;
+    padding-right: 2vh;
+}
+
+  .contact-cap-container{
+    /* border: 2px solid white; */
+    display: flex;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+    flex-basis:20%;
+  }
+
+  .contact-cap{
+    height: 16vw;
+    border-bottom: 3.25vw solid transparent;
+    margin-left: 0%;
+  }
+
+  .contact-menu-container {
+    /* border: 3px solid rgb(70, 20, 20); */
+    justify-content: center;
+  }
+
+  .contact-sub-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .contact-morelinks{
+    align-self: center;
+    font-size: 4.8vw;
+    line-height: 1.6em;
+    transition: 0.35s;
+    /* border:3px solid rgb(247, 169, 91); */
+  }
+
+  .ContactColumn{
+      display: flex;
+      flex-direction: column;
+      width: 20em;
+      height: 25em;
+      /* border:3px solid linen; */
+  }
+
+
+  .background{
+      /* border: 3px solid red; */
+      padding: 3vh;
+      height: 100%;
+      padding-bottom: 10%;
+      background-color: rgba(138, 136, 136, 0.336);
+      z-index: 1;
+  }
+
+  textarea{
+    width: 100%;
+    min-height: 50%;
+    box-sizing: border-box;
+    border-radius: .0em;
+    overflow: hidden;
+    background-color: #ecececfd;
+    border:none;
+    /* resize: none; */
+  }
+
+  textarea:placeholder-shown {
+    background-color: #ecececfd;
+    border: 2px solid rgb(18, 154, 172);
+    border-radius: 5px;
+  }
+
+  input{
+    box-sizing: border-box;
+    background-color: #ecececfd;
+    border-radius: .0em;
+    border:none;
+  }
+
+  input:placeholder-shown {
+    background-color: #ecececfd;
+    border: 2px solid rgb(18, 154, 172);
+    border-radius: 5px;
+  }
+
+  .contparag{
+    color: black;
+  }
+}

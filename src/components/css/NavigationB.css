@@ -1,0 +1,93 @@
+.flexbox-container-navbar{
+    display: flex;
+    position: fixed;
+    padding-left: 10.8em;
+    z-index: 1000;
+    /* border:3px solid linen; */
+}
+
+.caption{
+    font-family: Montserrat, Helvetica, Arial, sans-serif!important;
+    font-size: 1.3em!important;
+    font-style: normal!important;
+    font-weight: bold!important;
+    letter-spacing: 0.12em!important;
+    line-height: 0.12em!important;
+    color: linen!important;
+    display: inline-block!important;
+    margin: 0.6em 2.4em!important;
+    transition: .35s!important;
+}
+
+.caption:before {
+    /* border:3px solid linen; */
+    content: "";
+    position: fixed;
+    bottom: -0.15em;
+    left: 0;
+    width: 0px;
+    height: 0.15em;
+    color: white;
+    background: rgb(0, 238, 255);
+    transition: width 0.35s ease-in-out;
+}
+
+.caption:hover::before {
+    width: 100%;
+    transition: width .35s ease-in-out;
+}
+
+.caption:hover{
+    color:linen;
+    height: 0.9em;
+    transform: scale(1.25);
+    text-shadow: 0px 0px 20px rgb(0, 238, 255);
+    position: relative;
+    display: inline-block;
+    transition: all .75s ease-in-out;
+}
+
+.caption.active{
+    content: '';
+    width: 100%;
+    transform: scale(1.25);
+    text-decoration: underline rgb(0, 238, 255); 
+    text-decoration-thickness: 0.15em;
+    transition: all 0.0ms ease-in-out;
+    color: white !important;
+    /* border:3px solid linen; */
+}
+
+
+@media (max-width: 600px) {
+    .flexbox-container-navbar{
+        display: flex;
+        position: fixed;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0vw;
+        z-index: 1000;
+        width: 100vw;
+        /* border:3px solid linen; */
+    }
+
+    .mr-auto{
+        display: flex;
+        flex-direction: row!important;
+    }
+    
+    .caption{
+        letter-spacing: 0.025em!important;
+        line-height: 0.12em!important;
+        margin: 2.4vw 3vw!important;
+    }
+    
+    
+    .caption:hover{
+        transform: scale(1.15);
+    }
+    
+    .caption.active{
+        transform: scale(1.15);
+    }    
+}
